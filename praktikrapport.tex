@@ -5,7 +5,7 @@
 \usepackage[margin=2.5cm]{geometry}
 \usepackage[hidelinks]{hyperref}
 \usepackage{graphicx}
-\graphicspath{{Img/}}
+\graphicspath{{img/}}
 \usepackage{listings}
 \usepackage{color}
 \usepackage{adjustbox}
@@ -115,60 +115,63 @@
 Denne rapport er skrevet ud fra mit praktikophold i Efio ApS hovedkontor i København. 
 Jeg har arbejdet gennemsnitligt 35 timer om ugen både på Efio’s kontorer samt hjemmefra.
 
-Rapporten tager udgangspunkt fra praktikkens start den 17. august 2020 frem til den 9. oktober 2020.
+Rapporten tager udgangspunkt fra praktikkens start den 17. august 2020 frem til den 21. oktober 2020.
+
 Praktikopholdet har været i gruppe sammen med Andreas Zoega Vestergaard Vikke og Martin Eli Frederiksen. 
+
+Efio har brug for et timeregistreringssystem for de kunder som de er ude hos. Konsulenterne glemmer at få registreret timerne korrekt, og det estimeres at der kan gå op til 100.000 kr. i tab over manglende registrerede timer. Dette grunder i at Efio fakturerer per påbegyndte halve time, og de skal huske minuttet de begyndte og minuttet de stoppede.
+Systemet skal ligge som en applikation på kommunikationsplatformen Slack. 
+ 
  
 
 \chapter*{2. Beskrivelse af praktikvirksomheden}
 \addcontentsline{toc}{chapter}{2. Beskrivelse af praktikvirksomheden}
-Efio er et DevOps konsulentfirma bestående af 2 afdelinger beliggende i København og Odense.
-Efio har i alt 8 DevOps ingeniøre ansat som er meget nørdet inden for automatisation. 
-Dette betyder selvfølgelig at der er et stort fokus på kontinuerlig integration og kontinuerlig levering. 
-Efio er også samarbejdspartner med Amazon web service og praktisere bl.a. serverless, 
-containers og infrastructure as code. 
+Efio er et konsulentfirma, som specialiserer sig i DevOps. DevOps specialisere sig i automation, infrastruktur som kode, serverless first nano services og continuous integration and delivery. Alt dette kan de tilbyde i Cloud Computing form og har store kunder såsom DR, Danmarks National Bank, Coop, Novo og mange flere.
+Efio er et AWS Partner selskab hvilket vil sige de udbyder deres services på AWS platformen. De er omkring ca. 6 ansatte som Senior DevOps konsulenter, og har med os 5 praktikanter.
 
 \chapter*{3. Hvordan jeg har opfyldt mine læringsmål}
 \addcontentsline{toc}{chapter}{3. Hvordan jeg har opfyldt mine læringsmål}
-Efio har to afdelinger, en i København og i Odense. De også endnu et praktikhold i Odense ud over os. 
-Efio arbejder som konsulenter ude hos de virksomheder som de har som kunder, og er derved sjældent på egne kontorer. 
-Hvad kunden har behov for kan variere meget, og derved også konsulentens arbejde. 
-De fleste konsulenter har en fast kunde de er ude hos, og arbejder projektvis hos en kunde. 
-
-Efio har 4 kunde segmenter , de store virksomheder i lange ophold er det som efios konsulenter hovedsageligt foretager sig. 
-Men nogle små virksomheder kan også have brug for hjælp til at få ordnet fejl som kunden ikke kan eller ved hvordan skal ordnes. 
-Små virksomheder kan også købe klippekort til Efios konsulenter.
-
-Efio laver et daily standup på slack, så alle stadig ved hvad hinanden arbejder på selvom de ikke ser hinanden eller arbejder sammen 
-i en længere periode. 
 
 \section*{3.1 viden}
 \addcontentsline{toc}{section}{3.1 viden}
-Efio har to afdelinger, en i København og i Odense. De også endnu et praktikhold i Odense ud over os. 
+Efio har to afdelinger, en i København og en i Odense. De har også endnu et praktikhold i Odense ud over os. 
 Efio arbejder som konsulenter ude hos de virksomheder som de har som kunder, og er derved sjældent på egne kontorer. 
 Hvad kunden har behov for kan variere meget, og derved også konsulentens arbejde. 
 De fleste konsulenter har en fast kunde de er ude hos, og arbejder projektvis hos en kunde. 
-Efio har 4 kunde segmenter[HUSK FODNOTE HER], de store virksomheder i lange ophold er det som efios konsulenter 
-hovedsageligt foretager sig. Men nogle små virksomheder kan også have brug for hjælp til at få ordnet fejl som 
-kunden ikke kan eller ved hvordan skal ordnes. Små virksomheder kan også købe klippekort til Efios konsulenter.
-Efio laver et daily standup på slack, så alle stadig ved hvad hinanden arbejder på selvom de ikke ser 
-hinanden eller arbejder sammen i en længere periode. 
+
+Efio har 4 kunde segmenter , de store virksomheder i lange ophold er det som Efios konsulenter hovedsageligt foretager sig. 
+Men nogle små virksomheder kan også have brug for hjælp til at få ordnet fejl som kunden ikke kan eller ved hvordan skal ordnes. 
+Små virksomheder kan også købe klippekort til Efios konsulenter.
+
+Efio laver et daily stand-up på slack, så alle løbende ved, hvad hinanden arbejder på, 
+selvom de ikke ser hinanden eller arbejder sammen i en længere periode. 
+Dette bliver man påmindet om dagligt fra en bot, som også antyder hvordan det skal skrives, som kan ses på billedet forneden.
+\begin{center}
+\includegraphics{standup}
+\end{center}
 
 \section*{3.2 Læringsmål}
 \addcontentsline{toc}{section}{3.2 Læringsmål}
+\subsection*{Problemløsning og Problemudvikling}
 Joachim, direktør for Efio og vores tutor, har været inde over hele udviklingsprocessen, 
-og har været med til at tænke kritisk og logistisk i en anden sans end skolen har. 
-Joachin har gået meget op i at vi følger scrum helt rigtigt, og at vi inddrager dens elementer. 
-Joachim startede sprintsne med at redegøre for hvad der skulle laves, og gjorde redefor hvordan 
-det skulle udføres og kobles sammen. Det har derved stået os til opgave at prøve at udføre det, 
-og hvis der opstod nogle problemer, snakkede vi internt eller snakkede med Joachim til standup møder vi 
-normalt har om eftermiddagen. Jeg har stødt ind i flere problemer som jeg har skulle formidle til Joachim, 
-hvor vi sammen prøver at finde en løsning til det problem, som han synes passer bedst. 
+og har været med til at tænke kritisk og logistisk på en praksisorienteret måde. 
+Joachin har gået meget op i, at vi følger scrum helt rigtigt, og at vi inddrager dens elementer. 
+Joachim startede sprintsne med at redegøre for hvad der skulle laves, og gjorde rede for, hvordan det skulle udføres og kobles sammen. 
+Det har derefter været vores opgave at prøve at udføre det, og hvis der opstod nogle problemer, 
+diskuterede vi det internt eller talte med Joachim til stand-up mødet vi normalt har om eftermiddagen. 
+Jeg har stødt ind i flere problemer, som jeg har skullet formidle til Joachim, hvor vi sammen har fundet en løsning, som han synes passer bedst. 
+
+Vi har snakket sammen med Joachim om arkitektur på backenden af systemet. Her blev hele tankegangen af hvordan systemet diskuteret og udviklet. 
+På det første billede er der det sidste udkast af hvordan backenden skulle fungere. Renskrevet version kan findes ved bilag x.
+\begin{center}
+\includegraphics[height=11.93cm, width=15.9cm]{struktur}
+\end{center}
+
 
 \subsection*{Tekniske og Analytiske Arbejdsmetoder}
-Vi har brugt rigtig meget scrum til udviklingen af det produkt vi sidder med.
-Jeg kender til, eller har hørt om, alt vi har arbejdet med. 
-Der blev taget meget fokus i definition of ready og definition of done, som jeg kun kort er blevet informeret om 
-på skolen.
+Vi har brugt rigtig meget scrum til udviklingen af det produkt vi sidder med. 
+Jeg har kendskab til, eller har hørt om alt det vi har arbejdet med. 
+Der blev sat meget fokus på definition of ready og definition of done, som jeg kun kort har hørt om på skolen.
 Definition of ready består af INVEST:
 
 \begin{itemize}
@@ -192,8 +195,12 @@ Det kræver at userstoryen:
   \item Kan testes, og kræve nok information til at der kan laves test driven development eller behaviour driven development
 \end{itemize}
 
-Hvis en user story kan opfylde alle de krav kan den derved tages med i sprintet. Da vi kørte dette projekt, skulle alle være enige om hvert punkt i INVEST var opnået før definition of ready var opfyldt. Hvis ikke diskuterede vi for og imod punktet, og lavede ændringer hvis nødvendigt. 
-Når en user story er klar til at blive gennemgået og skal ligges over som færdig skal den først kunne opnå definition of done:
+Hvis en user story kan opfylde alle de krav kan den derved tages med i sprintet. 
+Da vi kørte dette projekt, skulle alle være enige om hvert punkt i INVEST var opnået før definition of ready var opfyldt. 
+Hvis ikke diskuterede vi for og imod punktet, og lavede ændringer hvis nødvendigt. 
+
+Når en user story er klar til at blive gennemgået, og skal lægges over som færdig, skal den først kunne opnå definition of done:
+
 Definition of Done:
 
 \begin{enumerate}
@@ -203,29 +210,34 @@ Definition of Done:
   \item Deployere til produktion
 \end{enumerate} 
 
-Første punkt bliver kørt igennem Cucumber’s Behave, som kører accept test i python 
-som en del af Behaviour Driven Development (BDD). Der testes lokalt før man pusher op, 
-men alle behave test køres automatisk oppe på CI-pipelinen når man pusher op på en feature branch. 
+Første punkt bliver kørt igennem Cucumber’s Behave, som kører accept test i python som en del af Behaviour Driven Development (BDD). 
+Der testes lokalt før man pusher op, men alle behave test køres automatisk oppe på CI-pipelinen når man pusher op på en feature branch. 
+
 Der kan ikke merges ind til master uden at man laver et pull request. 
-Dette pull request kræver at en anden fra ens hold gennemgår ens kode, og tjekke at det man har lavet, 
-er i orden og at koden opnår en vis kvalitet. Derved får man klaret punkt to og tre ved pull requestet, 
-når en holdmakker godkender ens pull request kan man merge ind til master.
+Dette pull request kræver at en anden fra ens hold gennemgår ens kode, og tjekker, at det man har lavet er i orden 
+og at koden opnår en vis kvalitet. Derved får man klaret punkt 2 og 3 ved pull requestet. 
+Når en holdmakker godkender ens pull request kan man merge ind til master.
+
 Til sidst opretter man en ny udgivelse på GitHub, det er CD pipeline sat op til at lytte efter. 
-Når en ny udgivelse er lavet, sender GitHub et request til pipelinen om at der er lavet en ny release, 
-som CD-pipelinen lytter på, så går den i gang med at bearbejde. Når pipelinen er kørt igennem og alt fungerer, 
-er der blevet deployeret til produktion. 
+Når en ny udgivelse er lavet, sender GitHub et request til pipelinen om at der er lavet en ny release som CD-pipelinen lytter på. 
+Så går den i gang med at bearbejde. Når pipelinen er kørt igennem og alt fungerer, er der blevet deployeret til produktion. 
+
 
 \subsection*{Struktur}
-Vi har brugt Jira til at opstille struktur omkring den individuelle arbejdsgang. Jira er en platform der bruges 
-til agile udviklingsmetoder. Jira har hele vores sprint backlog, hvor hver user story er brudt ned i subtasks. 
-Alle user storys kommer fra sprint planning meeting med PO, hvor vi sammen har siddet og bedømt hvor mange user 
-storys vi kan tage på et sprint, med henhold til den viden vi besidder på daværende tidspunkt. 
-For at kunne bedømme hvor stor en user story er har vi brugt poker planning sammen med risk evaluation, 
-for at bedømme om den størrelse der er givet til user story har en lille eller stor chance for at ramme forkert. 
+Vi har brugt Jira til at opstille struktur omkring den individuelle arbejdsgang. 
+Jira er en platform der bruges til agile udviklingsmetoder. Jira har hele vores sprint backlog, hvor hver user story er brudt ned i subtasks. 
+
+Alle user storys kommer fra sprint planning meeting med PO, hvor vi sammen har siddet og bedømt hvor mange user storys 
+vi kan tage på et sprint, med henhold til den viden vi besidder på nuværende tidspunkt. 
+For at kunne bedømme hvor stor en user story er, har vi brugt poker planning sammen med risk evaluation, 
+for at kunne bedømme om den størrelse der er givet til user story har en lille eller stor chance for at ramme forkert. 
 Risk evaluation bliver baseret på hvor meget vi kender til de teknologier som user storyen indebærer. 
-Hver dag laver vi daily standup, og snakker med hinanden om hvad vi arbejder på, og om vi har nogle problemer 
-vi eventuelt har brug for noget hjælp til. Derved har vi altid et overblik over hvor hele holdet er henne. 
-Hvis der ikke er nogen der har brug for hjælp, har vi arbejdet individuelt videre på den user story man er på, eller tilknytter sig en ny user story eller subtask.
+
+Hver dag har vi en daily stand-up, og taler med hinanden om, hvad vi arbejder på, og om vi har nogle problemer vi eventuelt 
+har brug for noget hjælp til. Derved har vi altid et overblik over hvor hele holdet er henne. 
+Hvis der ikke er nogen der har brug for hjælp, har vi arbejdet individuelt videre på den user story man er på, 
+eller tilknytter sig en ny user story eller subtask. 
+
 
 \section*{2.3 Kompetencer}
 \addcontentsline{toc}{section}{2.3 Kompetencer}
@@ -234,46 +246,62 @@ Hvis der ikke er nogen der har brug for hjælp, har vi arbejdet individuelt vide
 De første tre uger gik næsten kun ud på at tilegne sig viden omkring serverless computing, 
 AWS og deres tjenester. Meget af det har været svært at forstå, da det er noget helt andet 
 end det vi har arbejdet med på skolen. Selve brugen af tjenesterne har ikke været utroligt svært, 
-men forståelsen af hvordan de forskellige tjenester fungere har været det jeg har haft meget svært med. 
+men forståelsen af hvordan de forskellige tjenester fungerer har været det jeg har haft meget svært med. 
 Joachim har gennemgået mange af de ting som jeg har fundet svært, og virkelig gået i dybde med de forskellige 
 systemer og tjenester som vi har taget i brug så jeg kan få en dybere forståelse. 
 
 \subsection*{Faglig og tværfaglig}
-Jeg har hovedsageligt gjort brug af systemudvikling med scrum. Herved har vi også haft Peter inde over, 
-som er virkelig god til at se problematikker for brugeroplevelsen. Her har vi snakket sammen om hvordan 
-vi kunne forbedre designet af vores produkt, for at gøre det mere brugervenligt. 
+Jeg har hovedsageligt gjort brug af systemudvikling med scrum. 
+Her har vi også haft Peter inde over, som er virkelig god til at se problematikker for brugeroplevelsen. 
+Her har vi snakket sammen om, hvordan vi kunne forbedre designet af vores produkt, for at gøre det mere brugervenligt. 
+
+Herefter har vi også haft et møde med den anden praktik gruppe i Odense, 
+for at høre om hvad de lavede, samt få deres input til hvordan vi kunne forbedre vores eget produkt.
+
 
 \chapter*{3. Udførte arbejdsopgaver}
 \addcontentsline{toc}{chapter}{3. Udførte arbejdsopgaver}
 \subsection*{sprint 0}
 Før der kunne begyndes på projektet, var jeg nødt til at lærer omkring AWS og de tjenester som de tilbyder. 
-Dette indeholder bl.a. at få et certifikat fra Amazon om gennemførelse som AWS Techical Professional[HUSK FODNOTE HER]. 
-Herudover brugte jeg lang tid på at få online undervisning omkring AWS og deres tjenester samt hvordan man bruger 
-dem igennem a cloud guru.
+Dette indeholder bl.a. at få et certifikat fra Amazon om gennemførelse som AWS Techical ProfessionalFOOTNOTE HERE. 
+Herudover brugte jeg lang tid på at få online undervisning omkring AWS og deres tjenester samt hvordan man bruger dem igennem a cloud guruFOOTNOTE HERE.
 
 \subsection*{sprint 1}
-I projektets første sprint startede jeg med opbyggelse af en NoSQL database, DynamoDB. 
-Jeg har efterhånden skulle opbygge en del databaser med relationer, men det er ikke muligt med en NoSQL 
-database, og logikken er helt anderledes. Det er ikke noget vi har lært på skolen, men har heller ikke været 
-anset nødvendigt. Resten af gruppen har opbygget Continuous Integration (CI) og Continuous Deployment (CD) pipelines. 
-Det har vi kun fået en dags undervisning i, derved var det svært at forstå hvordan det fungerede til at starte med, 
-og siden jeg ikke selv har bygget den er min viden om den stadig begrænset. 
+\begin{center} 
+\includegraphics[height=4.13cm, width=15.92cm]{sprint1}
+\end{center}
+
+I projektets første sprint startede jeg med at opbygge en NoSQL database, DynamoDB. 
+Jeg har efterhånden skulle opbygge en del databaser med relationer, men logikken er helt anderledes. 
+Det er ikke noget vi har lært på skolen, men har heller ikke været anset nødvendigt. 
+Resten af gruppen har opbygget Continuous Integration (CI) og Continuous Deployment (CD) pipelines. 
+Det har vi kun fået en dags undervisning i. Derved var det svært at forstå hvordan det fungerede til at starte med, 
+og siden jeg ikke selv har bygget den, er min viden om den stadig begrænset.  
 
 \subsection*{sprint 2}
+\begin{center} 
+\includegraphics[height=4.13cm, width=15.92cm]{sprint2}
+\end{center}
+
 Idet der blev arbejdet på meget nye tjenester, blev andet sprint sat af til Spikes. 
-Spikesne omfatter brugen af lambda funktioner, som er begivenhedsdrevet serverløst computing platform, 
+Spikesne omfatter brugen af lambda funktioner, som er en begivenhedsdrevet serverløs computing platform, 
 så man kan køre kode uden at skulle håndtere servere.
 
-En af de lambdafunktioner skal kunne skrive til en Simple Queue Service (SQS), som holder beskeder i kø som 
-derefter kan køres af andre lambdafunktioner. Der skulle dertil også en lambdafunktion til at kunne tage en 
-besked fra SQS-køen og gøre noget ved den besked.
+En af de lambdafunktioner skal kunne skrive til en Simple Queue Service (SQS), 
+som holder beskeder i kø som derefter kan køres af andre lambdafunktioner. 
+Der skulle dertil også en lambdafunktion til at kunne tage en besked fra SQS-køen og gøre noget ved den besked.
 
-En anden lambdafunktion skulle kunne skrive fra en Simple Notification Service (SNS), som kan skrive beskeder, 
-e-mails, SMS mm. ud til alle som abonnere på et emne som den SNS omhandler. Man kan bruge en lambdafunktion til 
-at skrive beskeder ud fra SNS, som derved bliver sendt ud til alle der abonnere, som kan være en anden 
-lambdafunktion som gør noget ved den besked. 
+En anden lambdafunktion skulle kunne skrive fra en Simple Notification Service (SNS), 
+som kan skrive beskeder, e-mails, SMS mm. ud til alle som abonnere på et emne som den SNS omhandler. 
+Man kan bruge en lambdafunktion til at skrive beskeder ud fra SNS, som derved bliver sendt ud til alle der abonnerer, 
+hvilke kan være en anden lambdafunktion som gør noget ved den besked. 
+
 
 \subsection*{sprint 3}
+\begin{center} 
+\includegraphics[height=4.13cm, width=15.92cm]{sprint3}
+\end{center}
+
 Her havde jeg fokus på Slack Connection Service (SCS), som er at snakke med Slacks API igennem den app vi havde lavet. 
 Det bestod af at kunne sende en knap til en kanal i Slack, som en bruger kan trykke på. Her brugte jeg meget postman 
 for at finde ud af hvordan Slacks API fungerede, som vi har brugt meget i skolen. 
@@ -285,37 +313,131 @@ databasen. Modalets template er bygget i JSON, og kunne derved nemt manipuleres 
 af API og manipulation af JSON fra skolen af, og var derved ikke en større udfordring. 
 
 \subsection*{sprint 4}
-PO ville gerne have ændret måden data blev gemt på i databasen når en bruger valgte noget i modalen. 
-Han ville gerne kunne se hvis en kunde var blevet valgt fra hvis den allerede var valgt, og derved tilføje en 
-soft-delete på kunden i databasen. Der skulle også registreres tid ud fra hver eneste kunde valgt, også hvis kunden blev 
-valgt fra efter skulle tidsregistrering af den blive i databasen. 
+\begin{center} 
+\includegraphics[height=4.13cm, width=15.92cm]{sprint4}
+\end{center}
+
+Joachim ville gerne have ændret måden data blev gemt på i databasen når en bruger valgte en kunde i modalen. 
+Han ville gerne kunne se, hvis en kunde var blevet valgt fra, hvis den allerede var valgt, 
+og derved tilføje en soft-delete på kunden i databasen i stedet for bare at fjerne den. 
+Der skulle også registreres tid ud fra hver eneste kunde valgt, også hvis kunden blev valgt fra efter 
+timeregistrering skulle kunden blive i databasen. 
+
+\subsection*{sprint 5}
+\begin{center} 
+\includegraphics[height=4.13cm, width=15.92cm]{sprint5}
+\end{center}
+
+Jeg skulle opbygge en /command som brugere kunne benytte sig af til at registrere sig til systemet. 
+Dette opnåede jeg ved opsætning af en lambdafunktion der trak alt identitetsinformation fra brugeren i Slack, 
+og oprettede brugeren i databasen med et UUID, deres e-mail og deres Slack ID.
+
+Herefter har jeg arbejdet på at få lavet en ugentlig rapport til brugeren, 
+således at de kan få en oversigt over hvor mange timer de har været hos de forskellige kunder i den forrige uge. 
+Her skulle databasen ændres således at der kom datoer på, så man havde mulighed for at kunne sortere efter datoerne. 
+Herved var vi også nødt til at tjekke hvorvidt brugeren faktisk havde gennemført deres timeregistrering, hvis ikke det var 
+udført blev det ikke talt med. Lambdafunktionen der får oprettet rapporten, 
+har jeg sat op til at skulle køre hver eneste mandag kl. 9 om morgenen.
 
 \chapter*{4. Refleksion}
 \addcontentsline{toc}{chapter}{4. Refleksion}
 Virksomheden har fået en slack applikation som de kan bruge til at indregistrere timer de har været hos kunder. 
-Dette er noget Joachim gerne vil have bygget i længere tid og har prøvet at få bygget med andre praktikgrupper også. 
+Selv om systemet ikke er helt optimalt endnu, ligger der nu er godt fundament til systemet.
 
-Selv har jeg lært utroligt meget nyt, serverless computing og opsættelse og brug af AWS. Det har givet utroligt mange 
-udfordringer, da det er noget helt andet end det vi har lært på skolebænken. 
+Praktikopholdet har været en stor fornøjelse med en god indsigt i hvordan man arbejder professionelt, 
+hvordan man kommunikere og videregiver ens viden til hinanden på nemmeste måde. Alt vores kommunikation var igennem Slack, 
+hvor vi kunne se hvordan de andre arbejdede sammen, samt hvordan vi havde kontakt med vores chef og gruppe. 
 
-Det som jeg tror kunne have været rart at have med inden jeg tog i praktik var en mere fastsættelse for brugen 
-af scrum mens man er i skole. Ved faktisk at tage brug af definition of done og definition of ready. Samt gøre mere 
-ud af at blive lært hvordan man ordentligt opbygger user stories med estimeringer. Mens vi sad i skolen, blev nogle 
-af de her koncepter nævnt men aldrig taget i brug, eller krævet at vi tog dem i brug, og det ville have været rart 
-så man havde gjort det til en vane at det er sådan man udvikler. 
+Jeg har lært utroligt meget nyt stof, serverless computing og opsættelse og brug af AWS. 
+Det har været udfordrende at lære en masse nyt materiale som fungerer i nærheden af samme måde som det vi har lært i skolen. 
+Men da man havde fået forståelsen for de forskellige produkter og services AWS har fungerer det utroligt godt sammen og 
+kan nemt integreres med hinanden. Jeg regner selv med at bruge AWS til fremtidige projekter hvor der er mulighed for det.
 
-Mens vi arbejdede på projektet, var master branchen låst og der blev kun arbejdet på branches. Når man så var færdig 
-lavede man pull requests. Jeg har ikke lært om pull requests og hvordan det fungere, men jeg synes det er utrolig smart 
-at man får kigget hinandens arbejde igennem, og på den måde for formindsket fejl. Ved at vi også hver i ser har arbejdet 
-på sin egen branch har der været så få merge konflikter, og dem der har været har været så banale. Jeg ser meget positivt på 
-at arbejde på den måde, og kommer selv til at arbejde på den måde fremadrettet når jeg skal arbejde i grupper.
+At arbejde med scrum professionelt gav en helt anden oplevelse, ude hos Efio gav det overblik og var med til at skabe 
+en klar proces for det arbejde man havde forude. Idét at scrum blev taget meget seriøst og at der var fokus på INVEST, 
+planning poker og definition of done, gav det som helhed en virkelig god oplevelse og arbejdsgang. 
+Hvor scrum på skolen mere har følt som noget man bare skulle få overstået og kørt igennem, 
+kan jeg nu virkelig se værdierne i det som scrum giver til os som hold, og hvad det kan bidrage med. 
 
-Arbejdet i erhvervslivet har ikke haft den største indflydelse på mig, har arbejdet meget i praktikken som jeg har arbejdet i skolen. 
-Forstået som at man har aftalte mødetidspunkter og aftalte tidspunkter man er færdig for dagen. 
-Den gruppe jeg har været med i den periode jeg har været på skolen, har haft en del struktur og fælles ledelse. 
-Jeg har kun set positivt på at komme ud i erhvervet, og glad for at se at scrum bliver taget noget mere seriøst end jeg selv 
-har taget det førhen, det er også det der har været med til at vise mig hvor stor værdi scrum kan have for udviklingen af et system. 
+Jeg føler vi er kommet langt med vores produkt til Efio, og med alt hvad vi har lært og været igennem føler 
+jeg mig godt rustet til at kunne begynde på hovedopgaven forude, som vi har haft muligheden for at kunne skrive på Efio.
+ 
 
 \chapter*{5. Bilag}
 \addcontentsline{toc}{chapter}{5. Bilag}
+\section*{5.1 AWS Techical Professional Certification}
+\addcontentsline{toc}{section}{5.1 AWS Techical Professional Certification}
+
+\begin{center} 
+\includegraphics[height=10.89cm, width=15.92cm]{aws-technical-professional}
+\end{center}
+
+\newpage
+
+\section*{5.2 Efio's 4 kundesegmenter}
+\addcontentsline{toc}{section}{5.2 Efio's 4 kundesegmenter}
+
+\begin{center} 
+\includegraphics{kunde-segmenter}
+\end{center}
+Store virksomheder, kort ophold:
+\begin{itemize}
+  \item Brandsluk
+  \item Analyse + løsningsdesign
+  \item Undervisning
+\end{itemize}
+Små virksomheder, kort ophold:
+\begin{itemize}
+  \item Brandsluk
+  \item Analyse + løsningsdesign
+\end{itemize}
+Store virksomheder, langt ophold:
+\begin{itemize}
+  \item Fuld tids konsulent
+\end{itemize}
+Små virksomheder, kort ophold:
+\begin{itemize}
+  \item Klippekort
+  \item Hosting + drift
+  \item Vagt
+\end{itemize}
+
+\newpage
+
+\section*{5.3 Renskrevet backend arkitektur}
+\addcontentsline{toc}{section}{5.3 Renskrevet backend arkitektur}
+\begin{center} 
+\includegraphics[height=12.39cm, width=15.92cm]{struktur-renskrevet}
+\end{center}
+
+\newpage
+
+\section*{5.3 Systemet}
+\addcontentsline{toc}{section}{5.3 Systemet}
+
+\subsection*{Modal 1:}
+
+\begin{center} 
+\includegraphics[height=8.35cm, width=9.2cm]{modal1}
+\end{center}
+
+\subsection*{Modal 2:}
+
+\begin{center} 
+\includegraphics[height=8.35cm, width=9.2cm]{modal2}
+\end{center}
+
+\subsection*{Kvittering:}
+
+\begin{center} 
+\includegraphics[height=2.28cm, width=11.38cm]{kvittering}
+\end{center}
+
+
+
+
+
+
+
+
 \end{document}
